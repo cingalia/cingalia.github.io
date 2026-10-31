@@ -60,6 +60,26 @@
     .capability-note{font-size:12px;color:var(--muted);margin-top:20px}
     @media(max-width:850px){.venture-grid{grid-template-columns:1fr}.experience-list{grid-template-columns:1fr 1fr}}
     @media(max-width:600px){.venture-card{padding:21px}.product-grid,.project-list,.experience-list{grid-template-columns:1fr}}
+
+    .showcase-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:stretch}
+    .showcase-column{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:linear-gradient(145deg,rgba(18,30,48,.94),rgba(12,19,32,.96))}
+    .showcase-heading{padding:25px 27px 22px;background:linear-gradient(120deg,rgba(101,230,210,.09),rgba(120,169,255,.07));border-bottom:1px solid var(--line)}
+    .showcase-heading.inficore-head{background:linear-gradient(120deg,rgba(120,169,255,.13),rgba(166,140,255,.07))}
+    .showcase-heading-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .showcase-brand{font-size:25px;font-weight:800;letter-spacing:-.06em}
+    .showcase-brand a:hover{color:var(--cyan)}
+    .showcase-heading p{font-size:12px;color:var(--muted);margin:8px 0 0}
+    .showcase-body{padding:19px;display:grid;gap:12px}
+    .showcase-item{border:1px solid var(--line);border-radius:13px;padding:15px;background:rgba(255,255,255,.025)}
+    .showcase-item-head{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+    .client-logo{width:58px;height:48px;flex:0 0 58px;border-radius:9px;display:grid;place-items:center;background:#f5f7fb;color:#16304a;font-weight:800;font-size:13px;letter-spacing:-.04em;text-align:center;padding:5px}
+    .client-logo.meds{color:#166345;font-size:14px}.client-logo.brookside{color:#0879ad;font-size:10px}.client-logo.fresha{color:#1c443d;font-size:12px;letter-spacing:-.06em}.client-logo.mrm{color:#194ea0;font-size:17px}
+    .client-logo.chama{background:linear-gradient(135deg,#143f34,#218c68);color:#d8ffec}.client-logo.people{background:linear-gradient(135deg,#163b67,#327fc0);color:#e5f3ff}.client-logo.business{background:linear-gradient(135deg,#29245f,#5c55bd);color:#f0edff}.client-logo.jani{background:linear-gradient(135deg,#254b2d,#72a94e);color:#f2ffe7}
+    .showcase-item h3{font-size:14px;margin:0 0 2px;letter-spacing:-.025em}.showcase-item .item-type{font:9px "DM Mono";text-transform:uppercase;letter-spacing:.05em;color:var(--cyan)}
+    .showcase-item ul{margin:9px 0 0;padding-left:17px;color:var(--muted);font-size:11px;line-height:1.7}.showcase-item p{font-size:11px;color:var(--muted);margin:8px 0 0}
+    .showcase-foot{padding:0 20px 20px;font-size:11px;color:var(--muted)}.showcase-foot a{color:var(--cyan)}
+    @media(max-width:850px){.showcase-grid{grid-template-columns:1fr}}
+
     .skill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.skill{padding:17px;border:1px solid var(--line);border-radius:12px;background:rgba(17,27,43,.68)}.skill b{display:block;font-size:13px;margin-bottom:6px}.skill span{font-size:11px;color:var(--muted);line-height:1.7}
     .cta{padding:48px;border:1px solid rgba(101,230,210,.24);border-radius:20px;background:radial-gradient(ellipse at 100% 0%,rgba(120,169,255,.14),transparent 50%),linear-gradient(120deg,rgba(17,39,50,.94),rgba(17,24,42,.94));display:flex;justify-content:space-between;align-items:center;gap:28px}.cta h2{font-size:clamp(27px,4vw,42px);letter-spacing:-.06em;line-height:1.12;margin:8px 0 10px}.cta p{color:var(--muted);font-size:13px;margin:0;max-width:540px}
     footer{padding:28px 0 40px;color:var(--muted);font:10px "DM Mono";display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-links{display:flex;gap:18px}footer a:hover{color:var(--cyan)}
@@ -152,14 +172,28 @@
     </div></section>
 
     <section id="work"><div class="wrap">
-      <div class="section-head reveal"><div><div class="section-kicker">02 / SELECTED WORK</div><h2>Systems with a<br><span class="gradient">job to do.</span></h2></div><p class="section-intro">A selection of engineering areas and products across my professional work. Some client implementations are intentionally described at a capability level.</p></div>
-      <div class="work-grid">
-        <article class="work-card reveal"><div class="work-top"><span class="work-icon">ERP</span><span class="tag">Enterprise systems</span></div><h3>Business platforms & ERP</h3><p>Multi-company business software spanning HR, payroll, finance, sales, inventory and operational workflows. Focused on bringing disconnected processes into one coherent system.</p><div class="chips"><span>CodeIgniter</span><span>PHP</span><span>SQL</span><span>ERP</span></div></article>
-        <article class="work-card reveal"><div class="work-top"><span class="work-icon">API</span><span class="tag">Integration engineering</span></div><h3>Enterprise integrations</h3><p>API-driven application connectivity across business platforms, payment workflows, receipting and operational data. Experience includes work around MEDS, SYSPRO and LabWare environments.</p><div class="chips"><span>.NET</span><span>REST APIs</span><span>SQL</span><span>Integration</span></div></article>
-        <article class="work-card reveal"><div class="work-top"><span class="work-icon">CH</span><span class="tag">Digital products</span></div><h3>SoftSuite Chama</h3><p>A chama management product designed around the everyday realities of group record keeping: member contributions, savings, welfare, loans, meetings and reports.</p><div class="chips"><span>Flutter</span><span>PHP</span><span>Product design</span><span>Fintech workflows</span></div></article>
-        <article class="work-card reveal"><div class="work-top"><span class="work-icon">AI</span><span class="tag">Automation & AI</span></div><h3>A-Com · Aurora Command</h3><p>A personal command-centre initiative connecting conversations, decisions and actions into a practical operating layer for work and business operations.</p><div class="chips"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>AI integration</span></div></article>
-        <article class="work-card reveal"><div class="work-top"><span class="work-icon">HR</span><span class="tag">Business applications</span></div><h3>HR, payroll & workforce tools</h3><p>Application development across payroll, leave management, employee records, muster rolls, salary validation and related business processes.</p><div class="chips"><span>.NET</span><span>SQL</span><span>Excel workflows</span><span>Testing</span></div></article>
-        <article class="work-card reveal"><div class="work-top"><span class="work-icon">USSD</span><span class="tag">Mobile services</span></div><h3>USSD application frameworks</h3><p>Backend framework work for menu-driven mobile services, supporting structured interactions between users and application services.</p><div class="chips"><span>C#</span><span>.NET</span><span>USSD</span><span>APIs</span></div></article>
+      <div class="section-head reveal"><div><div class="section-kicker">03 / SELECTED WORK</div><h2>Companies behind<br><span class="gradient">the engineering.</span></h2></div><p class="section-intro">A closer look at the ventures I am building and the enterprise work delivered through Inficore. Each organisation anchors the products, systems and integrations beneath it.</p></div>
+      <div class="showcase-grid">
+        <article class="showcase-column reveal">
+          <header class="showcase-heading"><div class="showcase-heading-top"><span class="showcase-brand">Aurora Labs</span><span class="tag">FOUNDER · PRODUCT BUILDER</span></div><p>Technology venture · Product strategy, engineering and delivery</p></header>
+          <div class="showcase-body">
+            <div class="showcase-item"><div class="showcase-item-head"><span class="client-logo chama">SC</span><div><h3>SoftSuite Chama</h3><span class="item-type">Group & community finance management</span></div></div><p>Digital record keeping for chamas and self-help groups, covering members, savings, welfare, shares, loans, meetings and reports.</p></div>
+            <div class="showcase-item"><div class="showcase-item-head"><span class="client-logo people">SP</span><div><h3>SoftSuite People</h3><span class="item-type">HR & payroll</span></div></div><p>Workforce administration and payroll management for organisations.</p></div>
+            <div class="showcase-item"><div class="showcase-item-head"><span class="client-logo business">SB</span><div><h3>SoftSuite Business</h3><span class="item-type">Business operations & inventory</span></div></div><p>Business operations workflows spanning inventory, sales and point-of-sale processes.</p></div>
+            <div class="showcase-item"><div class="showcase-item-head"><span class="client-logo jani">JA</span><div><h3>Jani AgriTech</h3><span class="item-type">Integrated agriculture</span></div></div><p>An integrated farming initiative exploring poultry, aquaculture, black soldier fly, Azolla and crop production.</p></div>
+          </div>
+          <div class="showcase-foot"><a href="https://softsuiteerp.co.ke/" target="_blank" rel="noreferrer">Explore SoftSuite ↗</a> · <a href="https://chama.softsuiteerp.co.ke/" target="_blank" rel="noreferrer">SoftSuite Chama ↗</a></div>
+        </article>
+        <article class="showcase-column reveal">
+          <header class="showcase-heading inficore-head"><div class="showcase-heading-top"><span class="showcase-brand"><a href="https://inficore.co.ke/" target="_blank" rel="noreferrer">Inficore ↗</a></span><span class="tag">FOUNDER · LEAD DEVELOPER</span></div><p>Enterprise software engineering · Systems integration · Technical delivery</p></header>
+          <div class="showcase-body">
+            <div class="showcase-item"><div class="showcase-item-head"><span class="client-logo meds">MEDS</span><div><h3>MEDS Kenya</h3><span class="item-type">Quality assurance & ERP integration</span></div></div><ul><li><strong>QPAS:</strong> Quality Assurance System developed from scratch in .NET for incoming goods inspection, quality checks and approval/rejection.</li><li><strong>SYSPRO integration:</strong> Transaction service covering receipting, invoicing, purchase orders and warehouse inspection/verification.</li></ul></div>
+            <div class="showcase-item"><div class="showcase-item-head"><span class="client-logo brookside">Brookside</span><div><h3>Brookside</h3><span class="item-type">Workflow automation</span></div></div><ul><li>Rules-driven SYSPRO purchase-order workflow automation, applying business conditions and triggering the appropriate actions.</li></ul></div>
+            <div class="showcase-item"><div class="showcase-item-head"><span class="client-logo fresha">fresha</span><div><h3>Fresha</h3><span class="item-type">Data integration & processing</span></div></div><ul><li>Returns merchandise portal feeding return data into SYSPRO and Fresha.</li><li>Milk collection data integration with background processing and synchronisation to support farmer payment processing.</li></ul></div>
+            <div class="showcase-item"><div class="showcase-item-head"><span class="client-logo mrm">MRM</span><div><h3>Mabati Rolling Mills</h3><span class="item-type">HR & payroll data integration</span></div></div><ul><li>Bidirectional employee and payroll data synchronisation between SYSPRO and NetSuite using APIs, database change detection and scheduled/event-triggered updates.</li></ul></div>
+          </div>
+          <div class="showcase-foot">Selected client engagements · <a href="https://inficore.co.ke/" target="_blank" rel="noreferrer">Visit Inficore ↗</a></div>
+        </article>
       </div>
     </div></section>
 
