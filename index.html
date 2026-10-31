@@ -86,6 +86,50 @@
     @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
     @media(max-width:850px){.hero{grid-template-columns:1fr;padding:75px 0 85px;gap:10px}.visual{min-height:380px}.orbital{width:320px}.section-head{display:block}.section-intro{margin-top:15px}.skill-grid{grid-template-columns:repeat(2,1fr)}.role{grid-template-columns:1fr;gap:4px}.cta{display:block}.cta .btn{margin-top:24px}}
     @media(max-width:600px){.wrap{width:min(100% - 34px,var(--max))}nav{height:66px}.nav-links{gap:13px}.nav-links a{font-size:9px}.nav-links a:nth-child(2),.nav-links a:nth-child(3){display:none}.brand{font-size:13px}.hero{min-height:auto;padding:70px 0 65px}h1{font-size:54px}.hero-copy{font-size:15px}.hero-meta{gap:13px;font-size:9px}.visual{min-height:330px}.orbital{width:270px}.core-inner{width:115px;height:115px}.core-inner strong{font-size:43px}.float-card{font-size:9px;padding:9px 11px}.fc1{right:0}.fc2{left:0}.stats{grid-template-columns:1fr;gap:9px;margin-top:0}.stat{padding:16px 19px}.stat strong{font-size:23px}section{padding:70px 0}.about-grid,.work-grid{grid-template-columns:1fr}.panel{padding:22px}.skill-grid{grid-template-columns:1fr 1fr}.cta{padding:28px 23px}.section-head h2{font-size:35px}}
+  
+    /* Selected Work: restored company-led showcase */
+    .showcase-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:stretch}
+    .showcase-column{min-width:0;overflow:hidden;border:1px solid var(--line);border-radius:18px;background:linear-gradient(155deg,rgba(18,30,48,.96),rgba(10,17,29,.98));box-shadow:0 18px 48px rgba(0,0,0,.16);position:relative}
+    .showcase-column:before{content:"";position:absolute;inset:0 0 auto;height:2px;background:linear-gradient(90deg,var(--cyan),rgba(120,169,255,.7),transparent 82%);opacity:.8}
+    .showcase-column:nth-child(2):before{background:linear-gradient(90deg,var(--blue),var(--violet),transparent 82%)}
+    .showcase-heading{padding:24px 24px 20px;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 100% 0%,rgba(101,230,210,.09),transparent 55%)}
+    .inficore-head{background:radial-gradient(ellipse at 100% 0%,rgba(120,169,255,.12),transparent 55%)}
+    .showcase-heading-top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:9px}
+    .showcase-brand{font-size:22px;font-weight:800;letter-spacing:-.055em;color:var(--text)}
+    .showcase-brand a:hover{color:var(--cyan)}
+    .showcase-heading>p{font-size:12px;color:var(--muted);margin:0;line-height:1.65}
+    .showcase-heading .tag{font-size:9px}
+    .showcase-body{padding:17px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-content:start}
+    .showcase-item{min-width:0;height:100%;padding:15px;border:1px solid rgba(176,199,229,.12);border-radius:13px;background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.012));transition:transform .2s,border-color .2s,background .2s}
+    .showcase-item:hover{transform:translateY(-3px);border-color:rgba(101,230,210,.32);background:linear-gradient(145deg,rgba(101,230,210,.055),rgba(255,255,255,.015))}
+    .showcase-item-head{display:flex;align-items:center;gap:11px;min-height:44px;margin-bottom:13px}
+    .client-logo{width:43px;height:43px;flex:0 0 43px;display:grid;place-items:center;border:1px solid rgba(101,230,210,.25);border-radius:12px;background:rgba(101,230,210,.075);color:var(--cyan);font:800 12px "DM Mono";letter-spacing:-.04em}
+    .client-logo.people{color:#b7c9ff;border-color:rgba(120,169,255,.3);background:rgba(120,169,255,.08)}
+    .client-logo.business{color:#d1baff;border-color:rgba(166,140,255,.3);background:rgba(166,140,255,.08)}
+    .client-logo.jani{color:#b7e5a6;border-color:rgba(145,205,119,.3);background:rgba(145,205,119,.08)}
+    .client-logo.meds{font-size:10px;letter-spacing:-.06em}.client-logo.brookside{font-size:9px}
+    .client-logo.fresha{font-family:Manrope,sans-serif;font-size:13px;font-style:italic}.client-logo.mrm{font-size:13px}
+    .showcase-item h3{font-size:14px;line-height:1.3;letter-spacing:-.035em;margin:0 0 3px}
+    .item-type{display:block;color:var(--muted);font-size:10px;line-height:1.45}
+    .showcase-item>p{font-size:11px;line-height:1.7;color:#aebdd0;margin:0}
+    .showcase-item ul{margin:0;padding-left:16px;color:#aebdd0;font-size:10.5px;line-height:1.65}
+    .showcase-item li+li{margin-top:8px}.showcase-item li strong{color:#e8f0fa}
+    .showcase-foot{padding:13px 22px;border-top:1px solid var(--line);font:10px "DM Mono";letter-spacing:.02em;color:var(--muted);background:rgba(255,255,255,.012)}
+    .showcase-foot a{color:var(--cyan);transition:color .2s}.showcase-foot a:hover{color:#fff}
+    .logo-marquee{margin-top:28px;padding:22px 0 8px;border-top:1px solid var(--line);overflow:hidden;position:relative}
+    .logo-marquee-label{font:10px "DM Mono";letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+    .logo-marquee-window{overflow:hidden;position:relative;mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+    .logo-marquee-track{display:flex;width:max-content;animation:logo-drift 48s linear infinite;will-change:transform}
+    .logo-marquee-window:hover .logo-marquee-track{animation-play-state:paused}
+    .logo-marquee-set{display:flex;align-items:center;gap:12px;padding-right:12px}
+    .marquee-mark{height:58px;min-width:142px;padding:0 17px;display:flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:12px;background:linear-gradient(145deg,rgba(18,30,48,.9),rgba(12,19,32,.9));color:#dce8f7;font-size:12px;font-weight:750;letter-spacing:-.025em;white-space:nowrap;transition:border-color .2s,background .2s}
+    .marquee-mark:nth-child(3n){font-weight:600;letter-spacing:.015em}.marquee-mark:nth-child(4n){font-size:10px;letter-spacing:.02em}
+    .marquee-mark:hover{border-color:rgba(101,230,210,.45);background:rgba(101,230,210,.07)}
+    @keyframes logo-drift{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+    @media(max-width:900px){.showcase-grid{grid-template-columns:1fr}}
+    @media(max-width:600px){.showcase-heading{padding:20px 18px 17px}.showcase-body{padding:13px;grid-template-columns:1fr;gap:10px}.showcase-item{padding:14px}.showcase-brand{font-size:20px}.marquee-mark{height:54px;min-width:128px;padding:0 14px}}
+    @media(prefers-reduced-motion:reduce){.logo-marquee-track{animation:none}.showcase-item{transition:none}}
+
   </style>
 </head>
 <body>
@@ -199,10 +243,10 @@
         <div class="logo-marquee-window">
           <div class="logo-marquee-track">
             <div class="logo-marquee-set">
-              <span class="brand-mark">MEDS</span><span class="brand-mark">Brookside</span><span class="brand-mark">Fresha</span><span class="brand-mark">Mabati Rolling Mills</span><span class="brand-mark">Innova</span><span class="brand-mark">TechnoBrain</span><span class="brand-mark">EasyPay</span><span class="brand-mark">Africa Centre for Computing</span><span class="brand-mark">Trots</span><span class="brand-mark">Smsgh</span><span class="brand-mark">Modern Age Solutions</span><span class="brand-mark">Kalimoni Greens</span><span class="brand-mark">Milgates School</span><span class="brand-mark">SoftSuite Chama</span><span class="brand-mark">Banda Health</span><span class="brand-mark">KCA University</span><span class="brand-mark">Zetech University</span><span class="brand-mark">Mount Kenya University</span><span class="brand-mark">I&M Bank</span><span class="brand-mark">Chase Bank</span><span class="brand-mark">Jubilee Insurance</span>
+              <span class="marquee-mark">MEDS</span><span class="marquee-mark">Brookside</span><span class="marquee-mark">Fresha</span><span class="marquee-mark">Mabati Rolling Mills</span><span class="marquee-mark">Innova</span><span class="marquee-mark">TechnoBrain</span><span class="marquee-mark">EasyPay</span><span class="marquee-mark">Africa Centre for Computing</span><span class="marquee-mark">Trots</span><span class="marquee-mark">Smsgh</span><span class="marquee-mark">Modern Age Solutions</span><span class="marquee-mark">Kalimoni Greens</span><span class="marquee-mark">Milgates School</span><span class="marquee-mark">SoftSuite Chama</span><span class="marquee-mark">Banda Health</span><span class="marquee-mark">KCA University</span><span class="marquee-mark">Zetech University</span><span class="marquee-mark">Mount Kenya University</span><span class="marquee-mark">I&M Bank</span><span class="marquee-mark">Chase Bank</span><span class="marquee-mark">Jubilee Insurance</span>
             </div>
             <div class="logo-marquee-set" aria-hidden="true">
-              <span class="brand-mark">MEDS</span><span class="brand-mark">Brookside</span><span class="brand-mark">Fresha</span><span class="brand-mark">Mabati Rolling Mills</span><span class="brand-mark">Innova</span><span class="brand-mark">TechnoBrain</span><span class="brand-mark">EasyPay</span><span class="brand-mark">Africa Centre for Computing</span><span class="brand-mark">Trots</span><span class="brand-mark">Smsgh</span><span class="brand-mark">Modern Age Solutions</span><span class="brand-mark">Kalimoni Greens</span><span class="brand-mark">Milgates School</span><span class="brand-mark">SoftSuite Chama</span><span class="brand-mark">Banda Health</span><span class="brand-mark">KCA University</span><span class="brand-mark">Zetech University</span><span class="brand-mark">Mount Kenya University</span><span class="brand-mark">I&M Bank</span><span class="brand-mark">Chase Bank</span><span class="brand-mark">Jubilee Insurance</span>
+              <span class="marquee-mark">MEDS</span><span class="marquee-mark">Brookside</span><span class="marquee-mark">Fresha</span><span class="marquee-mark">Mabati Rolling Mills</span><span class="marquee-mark">Innova</span><span class="marquee-mark">TechnoBrain</span><span class="marquee-mark">EasyPay</span><span class="marquee-mark">Africa Centre for Computing</span><span class="marquee-mark">Trots</span><span class="marquee-mark">Smsgh</span><span class="marquee-mark">Modern Age Solutions</span><span class="marquee-mark">Kalimoni Greens</span><span class="marquee-mark">Milgates School</span><span class="marquee-mark">SoftSuite Chama</span><span class="marquee-mark">Banda Health</span><span class="marquee-mark">KCA University</span><span class="marquee-mark">Zetech University</span><span class="marquee-mark">Mount Kenya University</span><span class="marquee-mark">I&M Bank</span><span class="marquee-mark">Chase Bank</span><span class="marquee-mark">Jubilee Insurance</span>
             </div>
           </div>
         </div>
