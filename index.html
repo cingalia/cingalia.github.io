@@ -146,7 +146,26 @@
     @media(max-width:850px){.nav{gap:12px}.header-contact{margin-left:auto}.contact-actions{flex-direction:row;flex-wrap:wrap;min-width:0}.contact-actions .btn{flex:1 1 auto}}
     @media(max-width:600px){.nav{gap:8px}.nav-links{gap:9px}.nav-links a{font-size:8px}.nav-links .contact-link{padding:7px 8px}.header-contact{gap:4px}.header-contact a{font-size:8px;padding:6px}.header-contact a:nth-child(2){display:none}.cta{padding:26px 20px}.contact-actions{display:grid;grid-template-columns:1fr}.contact-actions .btn{width:100%}.footer-links{gap:12px}}
 
-  </style>
+      /* Section 01.1 - education and milestones */
+    .milestones{margin-top:clamp(46px,7vw,82px);padding-top:clamp(28px,4vw,44px);border-top:1px solid var(--line)}
+    .milestones-head{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:22px}
+    .milestones-head h3{font:500 clamp(24px,3vw,34px) "DM Sans",sans-serif;letter-spacing:-.045em;margin:10px 0 0;color:var(--text)}
+    .milestones-head>p{max-width:390px;color:var(--muted);font-size:13px;line-height:1.75;margin:0}
+    .milestone-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .milestone-card{position:relative;display:flex;flex-direction:column;align-items:flex-start;min-height:280px;padding:23px;border:1px solid var(--line);border-radius:17px;background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.012));overflow:hidden;transition:border-color .25s,transform .25s}
+    .milestone-card:hover{border-color:rgba(101,230,210,.38);transform:translateY(-3px)}
+    .milestone-card:before{content:"";position:absolute;width:170px;height:170px;right:-90px;top:-95px;border-radius:50%;background:radial-gradient(circle,rgba(139,124,255,.16),transparent 70%);pointer-events:none}
+    .milestone-top{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .milestone-index{font:10px "DM Mono",monospace;color:var(--cyan);letter-spacing:.12em}
+    .milestone-tag{font:9px "DM Mono",monospace;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line);border-radius:99px;padding:6px 9px}
+    .milestone-mark{display:grid;place-items:center;width:44px;height:44px;margin:22px 0 14px;border-radius:12px;background:linear-gradient(135deg,rgba(101,230,210,.14),rgba(139,124,255,.18));border:1px solid rgba(139,124,255,.2);color:var(--cyan);font:600 13px "DM Mono",monospace;letter-spacing:-.04em}
+    .milestone-card h4{font:600 18px "DM Sans",sans-serif;letter-spacing:-.025em;color:var(--text);margin:0 0 7px}
+    .milestone-role{font-size:12px!important;color:var(--cyan)!important;font-weight:600;margin:0 0 10px!important}
+    .milestone-card>p:not(.milestone-role){font-size:12px;line-height:1.75;color:var(--muted);margin:0 0 12px}
+    .milestone-link{display:inline-flex;align-items:center;gap:6px;margin-top:8px;color:var(--cyan);font:10px "DM Mono",monospace;letter-spacing:.015em;transition:color .2s}
+    .milestone-link:hover{color:var(--text)}
+    @media(max-width:700px){.milestones-head{display:block}.milestones-head>p{margin-top:12px}.milestone-grid{grid-template-columns:1fr}.milestone-card{min-height:0}}
+</style>
 </head>
 <body>
   <div class="nav-shell"><div class="wrap"><nav class="nav" aria-label="Main navigation">
@@ -183,6 +202,47 @@
       <div class="about-grid">
         <div class="panel reveal"><p>I am a full-stack software developer with experience across enterprise application development, API integration, databases and digital product development.</p><p>My work has moved between established business platforms and new products, giving me a practical view of both maintaining complex systems and creating better ones.</p><p>I care about software that is dependable, understandable and useful long after launch.</p></div>
         <div class="panel principles reveal"><div class="principle"><span class="principle-icon">01</span><div><b>Understand the operation</b><small>Translate real business workflows into clear technical requirements.</small></div></div><div class="principle"><span class="principle-icon">02</span><div><b>Connect the moving parts</b><small>Build APIs, integrations and data flows that let systems work together.</small></div></div><div class="principle"><span class="principle-icon">03</span><div><b>Build for the long run</b><small>Prioritise maintainability, reliability, security and a thoughtful user experience.</small></div></div></div>
+      <div class="milestones reveal">
+        <div class="milestones-head">
+          <div><div class="section-kicker">01.1 / EDUCATION &amp; MILESTONES</div><h3>Where the journey took shape.</h3></div>
+          <p>Academic foundations, early product-building experiences and technology programmes that shaped my approach to engineering.</p>
+        </div>
+        <div class="milestone-grid">
+          <article class="milestone-card milestone-featured">
+            <div class="milestone-top"><span class="milestone-index">01</span><span class="milestone-tag">Education</span></div>
+            <div class="milestone-mark">JKUAT</div>
+            <h4>Jomo Kenyatta University of Agriculture and Technology</h4>
+            <p class="milestone-role">Bachelor of Science in Computer Technology</p>
+            <p>Second Class Honours, Upper Division. The academic foundation for my career in software engineering.</p>
+            <a class="milestone-link" href="https://www.jkuat.ac.ke/directorate/alumni/?page_id=17305" target="_blank" rel="noopener">View official JKUAT graduation records <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="milestone-card">
+            <div class="milestone-top"><span class="milestone-index">02</span><span class="milestone-tag">2013 · Kigali, Rwanda</span></div>
+            <div class="milestone-mark">ML</div>
+            <h4>Mkulima Leo</h4>
+            <p class="milestone-role">Startup Team · iBizAfrica Incubation</p>
+            <p>Part of the Mkulima Leo startup team that presented its agricultural information application at a regional agri-hackathon in Kigali. The venture is also listed among iBizAfrica's notable incubated startups.</p>
+            <a class="milestone-link" href="https://cskonline.org/about-us/kenya-ict-press/445-kenyan-innovators-showcase-their-ict-creations-in-kigali" target="_blank" rel="noopener">Read the Kigali coverage <span aria-hidden="true">↗</span></a>
+            <a class="milestone-link" href="https://ibizafrica.strathmore.edu/wp-content/uploads/2024/06/%40iBizAfrica-Incubation-Brochure-Compressed.pdf" target="_blank" rel="noopener">View iBizAfrica incubation brochure <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="milestone-card">
+            <div class="milestone-top"><span class="milestone-index">03</span><span class="milestone-tag">2014 · Competition</span></div>
+            <div class="milestone-mark">IC</div>
+            <h4>Microsoft Imagine Cup · Team BiDE Code</h4>
+            <p class="milestone-role">TeachSpace · Development Team · 2nd place in Kenya</p>
+            <p>Worked on the IoT component of TeachSpace, using Microsoft Kinect to track movement and support a classroom interaction feature that detected a teacher’s hand movements.</p>
+            <a class="milestone-link" href="https://techmoran.com/2014/05/02/microsoft-imagine-cup-2014-in-kenya-winner-announced/?amp=1" target="_blank" rel="noopener">Competition reference <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="milestone-card">
+            <div class="milestone-top"><span class="milestone-index">04</span><span class="milestone-tag">2015 · Developer programme</span></div>
+            <div class="milestone-mark">4A</div>
+            <h4>Microsoft 4Afrika</h4>
+            <p class="milestone-role">Windows Developer Trainee Programme Graduate</p>
+            <p>Completed the Windows developer trainee programme, building experience in Windows application development and Azure. Featured in Techweez's coverage of the first Kenyan graduating cohort.</p>
+            <a class="milestone-link" href="https://techweez.com/0000/00/00/microsofts-4afrika-program-graduates-windows-developer-trainees-kenya/" target="_blank" rel="noopener">Read the Techweez feature <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </div>
       </div>
     </div></section>
 
