@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d18">
+  <meta name="description" content="Clinton Ingalia is a software engineer building enterprise applications, integrations and digital products.">
+  <meta property="og:title" content="Clinton Ingalia | Software Engineer & Product Builder">
+  <meta property="og:description" content="Engineering ideas into dependable systems. Enterprise software, integrations and digital products.">
+  <title>Clinton Ingalia | Software Engineer & Product Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#090d18;--panel:#101827;--panel2:#121e30;--text:#edf4ff;--muted:#9baabe;--line:rgba(176,199,229,.14);--cyan:#65e6d2;--blue:#78a9ff;--violet:#a68cff;--max:1160px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif;line-height:1.65;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-2;background:radial-gradient(ellipse at 80% 8%,rgba(73,117,202,.17),transparent 34%),radial-gradient(ellipse at 8% 42%,rgba(48,194,173,.10),transparent 32%),linear-gradient(rgba(132,164,207,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(132,164,207,.035) 1px,transparent 1px);background-size:auto,auto,54px 54px,54px 54px;mask-image:linear-gradient(to bottom,black,transparent 88%)}
+    a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}.mono,.eyebrow,.tag,.nav a,.meta{font-family:"DM Mono",monospace;letter-spacing:.04em}
+    .nav-shell{position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line);background:rgba(9,13,24,.78);backdrop-filter:blur(18px)}
+    nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.04em}.brand-mark{width:35px;height:35px;border:1px solid rgba(101,230,210,.55);border-radius:11px;display:grid;place-items:center;color:var(--cyan);font-family:"DM Mono";font-size:14px;background:linear-gradient(145deg,rgba(101,230,210,.14),rgba(120,169,255,.08));box-shadow:0 0 28px rgba(101,230,210,.10)}
+    .nav-links{display:flex;gap:28px;align-items:center}.nav a{font-size:11px;color:var(--muted);transition:.2s}.nav a:hover{color:var(--cyan)}.nav .contact-link{border:1px solid rgba(101,230,210,.42);padding:10px 15px;border-radius:9px;color:var(--cyan)}
+    .hero{min-height:690px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:48px;padding:94px 0 100px;position:relative}.eyebrow{font-size:11px;color:var(--cyan);text-transform:uppercase;display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";width:27px;height:1px;background:var(--cyan)}h1{font-size:clamp(48px,7vw,88px);line-height:1.02;letter-spacing:-.075em;margin:24px 0 22px;font-weight:800}.gradient{background:linear-gradient(100deg,var(--cyan),#8db8ff 55%,var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}.hero-copy{font-size:17px;max-width:620px;color:#b7c4d7;line-height:1.85}.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:34px}.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 18px;border-radius:10px;font-size:13px;font-weight:800;border:1px solid var(--line);transition:transform .2s,border-color .2s}.btn:hover{transform:translateY(-3px);border-color:var(--cyan)}.btn-primary{background:linear-gradient(110deg,var(--cyan),#9bd9ed);color:#07131b;border:0}.btn-quiet{color:var(--text);background:rgba(255,255,255,.025)}
+    .hero-meta{display:flex;gap:24px;flex-wrap:wrap;margin-top:46px;color:var(--muted);font:11px "DM Mono";text-transform:uppercase}.hero-meta span{display:flex;align-items:center;gap:8px}.dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px var(--cyan)}
+    .visual{min-height:440px;position:relative;display:grid;place-items:center}.orbital{width:min(390px,90%);aspect-ratio:1;border-radius:50%;border:1px solid rgba(120,169,255,.22);position:relative;background:radial-gradient(circle at 50% 48%,rgba(101,230,210,.10),rgba(120,169,255,.04) 42%,transparent 68%);box-shadow:inset 0 0 80px rgba(101,230,210,.035),0 0 100px rgba(75,112,194,.08);animation:float 7s ease-in-out infinite}
+    .orbital:before,.orbital:after{content:"";position:absolute;inset:12%;border:1px solid rgba(101,230,210,.20);border-radius:50%;transform:rotateX(67deg) rotateZ(-25deg)}.orbital:after{inset:1%;transform:rotateX(67deg) rotateZ(55deg);border-color:rgba(166,140,255,.25)}
+    .core{position:absolute;inset:0;display:grid;place-items:center}.core-inner{width:150px;height:150px;border-radius:34px;display:grid;place-items:center;background:linear-gradient(145deg,rgba(101,230,210,.18),rgba(120,169,255,.13));border:1px solid rgba(151,219,226,.36);box-shadow:0 0 65px rgba(101,230,210,.13),inset 0 0 30px rgba(255,255,255,.04);transform:rotate(-8deg)}.core-inner strong{font-size:54px;letter-spacing:-.1em;transform:rotate(8deg);background:linear-gradient(120deg,#e8fffb,var(--cyan));-webkit-background-clip:text;color:transparent}
+    .float-card{position:absolute;padding:12px 15px;border:1px solid var(--line);background:rgba(15,24,39,.88);backdrop-filter:blur(12px);border-radius:12px;box-shadow:0 15px 40px rgba(0,0,0,.24);font-size:11px;color:#c4d1e3}.float-card b{display:block;color:var(--text);font-size:12px;margin-bottom:2px}.fc1{top:13%;right:-2%}.fc2{bottom:14%;left:-5%}.fc3{bottom:4%;right:4%}
+    section{padding:92px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:38px}.section-kicker{font:11px "DM Mono";color:var(--cyan);text-transform:uppercase}.section-head h2{font-size:clamp(30px,4vw,48px);letter-spacing:-.06em;line-height:1.12;margin:10px 0 0}.section-intro{max-width:420px;color:var(--muted);font-size:14px;margin:0}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:-25px;position:relative;z-index:2}.stat{padding:22px 24px;border:1px solid var(--line);border-radius:14px;background:linear-gradient(145deg,rgba(18,30,48,.92),rgba(12,19,32,.88))}.stat strong{display:block;font-size:27px;letter-spacing:-.05em}.stat span{font:10px "DM Mono";color:var(--muted);text-transform:uppercase}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{background:linear-gradient(145deg,rgba(18,30,48,.88),rgba(13,20,33,.92));border:1px solid var(--line);border-radius:16px;padding:28px}.panel p{color:var(--muted);font-size:14px;margin:0 0 14px}.panel p:last-child{margin-bottom:0}.principles{display:grid;gap:12px}.principle{display:flex;gap:14px;align-items:flex-start}.principle-icon{width:34px;height:34px;flex:0 0 34px;border:1px solid rgba(101,230,210,.22);border-radius:10px;display:grid;place-items:center;color:var(--cyan);font:12px "DM Mono"}.principle b{font-size:13px}.principle small{display:block;color:var(--muted);font-size:12px;margin-top:3px}
+    .work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.work-card{padding:26px;border-radius:16px;border:1px solid var(--line);background:linear-gradient(145deg,rgba(18,30,48,.84),rgba(12,19,32,.92));position:relative;overflow:hidden;transition:.25s}.work-card:hover{transform:translateY(-5px);border-color:rgba(101,230,210,.42);box-shadow:0 22px 50px rgba(0,0,0,.2)}.work-card:after{content:"";position:absolute;width:180px;height:180px;right:-80px;top:-90px;border-radius:50%;background:rgba(101,230,210,.07);filter:blur(4px)}.work-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:25px}.work-icon{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;color:var(--cyan);border:1px solid rgba(101,230,210,.24);background:rgba(101,230,210,.07);font:14px "DM Mono"}.tag{font-size:9px;color:#9db0c8;border:1px solid var(--line);padding:6px 9px;border-radius:20px;text-transform:uppercase}.work-card h3{font-size:20px;letter-spacing:-.04em;margin:0 0 9px}.work-card p{font-size:13px;color:var(--muted);margin:0 0 18px;max-width:490px}.chips{display:flex;gap:7px;flex-wrap:wrap}.chips span{font:10px "DM Mono";color:#a9bad0;background:rgba(255,255,255,.04);padding:6px 8px;border-radius:6px}
+    .timeline{border-left:1px solid rgba(101,230,210,.28);margin-left:9px;padding-left:28px;display:grid;gap:28px}.role{position:relative;display:grid;grid-template-columns:180px 1fr;gap:24px}.role:before{content:"";position:absolute;width:9px;height:9px;border-radius:50%;background:var(--cyan);left:-33px;top:8px;box-shadow:0 0 15px rgba(101,230,210,.5)}.role-date{font:11px "DM Mono";color:var(--cyan);padding-top:5px}.role h3{font-size:18px;margin:0 0 3px}.role .company{font-size:12px;color:var(--muted)}.role p{font-size:13px;color:var(--muted);max-width:680px;margin:10px 0 0}
+    .skill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.skill{padding:17px;border:1px solid var(--line);border-radius:12px;background:rgba(17,27,43,.68)}.skill b{display:block;font-size:13px;margin-bottom:6px}.skill span{font-size:11px;color:var(--muted);line-height:1.7}
+    .cta{padding:48px;border:1px solid rgba(101,230,210,.24);border-radius:20px;background:radial-gradient(ellipse at 100% 0%,rgba(120,169,255,.14),transparent 50%),linear-gradient(120deg,rgba(17,39,50,.94),rgba(17,24,42,.94));display:flex;justify-content:space-between;align-items:center;gap:28px}.cta h2{font-size:clamp(27px,4vw,42px);letter-spacing:-.06em;line-height:1.12;margin:8px 0 10px}.cta p{color:var(--muted);font-size:13px;margin:0;max-width:540px}
+    footer{padding:28px 0 40px;color:var(--muted);font:10px "DM Mono";display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-links{display:flex;gap:18px}footer a:hover{color:var(--cyan)}
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:none}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+    @media(max-width:850px){.hero{grid-template-columns:1fr;padding:75px 0 85px;gap:10px}.visual{min-height:380px}.orbital{width:320px}.section-head{display:block}.section-intro{margin-top:15px}.skill-grid{grid-template-columns:repeat(2,1fr)}.role{grid-template-columns:1fr;gap:4px}.cta{display:block}.cta .btn{margin-top:24px}}
+    @media(max-width:600px){.wrap{width:min(100% - 34px,var(--max))}nav{height:66px}.nav-links{gap:13px}.nav-links a{font-size:9px}.nav-links a:nth-child(2),.nav-links a:nth-child(3){display:none}.brand{font-size:13px}.hero{min-height:auto;padding:70px 0 65px}h1{font-size:54px}.hero-copy{font-size:15px}.hero-meta{gap:13px;font-size:9px}.visual{min-height:330px}.orbital{width:270px}.core-inner{width:115px;height:115px}.core-inner strong{font-size:43px}.float-card{font-size:9px;padding:9px 11px}.fc1{right:0}.fc2{left:0}.stats{grid-template-columns:1fr;gap:9px;margin-top:0}.stat{padding:16px 19px}.stat strong{font-size:23px}section{padding:70px 0}.about-grid,.work-grid{grid-template-columns:1fr}.panel{padding:22px}.skill-grid{grid-template-columns:1fr 1fr}.cta{padding:28px 23px}.section-head h2{font-size:35px}}
+  </style>
+</head>
+<body>
+  <div class="nav-shell"><div class="wrap"><nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="#top"><span class="brand-mark">CI.</span><span>CLINTON INGALIA</span></a>
+    <div class="nav-links"><a href="#about">ABOUT</a><a href="#work">WORK</a><a href="#experience">EXPERIENCE</a><a href="#contact" class="contact-link">LET'S TALK ↗</a></div>
+  </nav></div></div>
+  <main id="top">
+    <div class="wrap">
+      <section class="hero" style="border:0">
+        <div class="hero-content">
+          <div class="eyebrow">SOFTWARE ENGINEER · PRODUCT BUILDER</div>
+          <h1>Engineering<br><span class="gradient">ideas into</span><br>systems.</h1>
+          <p class="hero-copy">I design, build and connect software that helps organisations work smarter. From enterprise applications and integrations to digital products built around real-world problems.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#work">Explore my work <span>↘</span></a><a class="btn btn-quiet" href="https://www.linkedin.com/in/clinton-ingalia-b39a6b7a/" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a></div>
+          <div class="hero-meta"><span><i class="dot"></i> Kenya · Available for conversations</span><span>BUILD · INTEGRATE · IMPROVE</span></div>
+        </div>
+        <div class="visual" aria-label="Abstract engineering-inspired CI monogram">
+          <div class="orbital"><div class="core"><div class="core-inner"><strong>CI</strong></div></div></div>
+          <div class="float-card fc1"><b>01 / ARCHITECT</b>Shape the system</div>
+          <div class="float-card fc2"><b>02 / ENGINEER</b>Make it work</div>
+          <div class="float-card fc3"><b>03 / DELIVER</b>Create real value</div>
+        </div>
+      </section>
+      <div class="stats reveal">
+        <div class="stat"><strong>2017—</strong><span>Professional development journey</span></div>
+        <div class="stat"><strong>End-to-end</strong><span>Product thinking to implementation</span></div>
+        <div class="stat"><strong>Cross-domain</strong><span>Enterprise · Finance · Health · SaaS</span></div>
+      </div>
+    </div>
+
+    <section id="about"><div class="wrap">
+      <div class="section-head reveal"><div><div class="section-kicker">01 / THE APPROACH</div><h2>More than writing code.<br><span class="gradient">Solving the system.</span></h2></div><p class="section-intro">The best software starts with understanding the work behind the screen: the people, the process, the data and the decisions.</p></div>
+      <div class="about-grid">
+        <div class="panel reveal"><p>I am a full-stack software developer with experience across enterprise application development, API integration, databases and digital product development.</p><p>My work has moved between established business platforms and new products, giving me a practical view of both maintaining complex systems and creating better ones.</p><p>I care about software that is dependable, understandable and useful long after launch.</p></div>
+        <div class="panel principles reveal"><div class="principle"><span class="principle-icon">01</span><div><b>Understand the operation</b><small>Translate real business workflows into clear technical requirements.</small></div></div><div class="principle"><span class="principle-icon">02</span><div><b>Connect the moving parts</b><small>Build APIs, integrations and data flows that let systems work together.</small></div></div><div class="principle"><span class="principle-icon">03</span><div><b>Build for the long run</b><small>Prioritise maintainability, reliability, security and a thoughtful user experience.</small></div></div></div>
+      </div>
+    </div></section>
+
+    <section id="work"><div class="wrap">
+      <div class="section-head reveal"><div><div class="section-kicker">02 / SELECTED WORK</div><h2>Systems with a<br><span class="gradient">job to do.</span></h2></div><p class="section-intro">A selection of engineering areas and products across my professional work. Some client implementations are intentionally described at a capability level.</p></div>
+      <div class="work-grid">
+        <article class="work-card reveal"><div class="work-top"><span class="work-icon">ERP</span><span class="tag">Enterprise systems</span></div><h3>Business platforms & ERP</h3><p>Multi-company business software spanning HR, payroll, finance, sales, inventory and operational workflows. Focused on bringing disconnected processes into one coherent system.</p><div class="chips"><span>CodeIgniter</span><span>PHP</span><span>SQL</span><span>ERP</span></div></article>
+        <article class="work-card reveal"><div class="work-top"><span class="work-icon">API</span><span class="tag">Integration engineering</span></div><h3>Enterprise integrations</h3><p>API-driven application connectivity across business platforms, payment workflows, receipting and operational data. Experience includes work around MEDS, SYSPRO and LabWare environments.</p><div class="chips"><span>.NET</span><span>REST APIs</span><span>SQL</span><span>Integration</span></div></article>
+        <article class="work-card reveal"><div class="work-top"><span class="work-icon">CH</span><span class="tag">Digital products</span></div><h3>SoftSuite Chama</h3><p>A chama management product designed around the everyday realities of group record keeping: member contributions, savings, welfare, loans, meetings and reports.</p><div class="chips"><span>Flutter</span><span>PHP</span><span>Product design</span><span>Fintech workflows</span></div></article>
+        <article class="work-card reveal"><div class="work-top"><span class="work-icon">AI</span><span class="tag">Automation & AI</span></div><h3>A-Com · Aurora Command</h3><p>A personal command-centre initiative connecting conversations, decisions and actions into a practical operating layer for work and business operations.</p><div class="chips"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>AI integration</span></div></article>
+        <article class="work-card reveal"><div class="work-top"><span class="work-icon">HR</span><span class="tag">Business applications</span></div><h3>HR, payroll & workforce tools</h3><p>Application development across payroll, leave management, employee records, muster rolls, salary validation and related business processes.</p><div class="chips"><span>.NET</span><span>SQL</span><span>Excel workflows</span><span>Testing</span></div></article>
+        <article class="work-card reveal"><div class="work-top"><span class="work-icon">USSD</span><span class="tag">Mobile services</span></div><h3>USSD application frameworks</h3><p>Backend framework work for menu-driven mobile services, supporting structured interactions between users and application services.</p><div class="chips"><span>C#</span><span>.NET</span><span>USSD</span><span>APIs</span></div></article>
+      </div>
+    </div></section>
+
+    <section id="experience"><div class="wrap">
+      <div class="section-head reveal"><div><div class="section-kicker">03 / EXPERIENCE</div><h2>Built through<br><span class="gradient">real-world work.</span></h2></div><p class="section-intro">Professional experience across software development, integrations and enterprise application delivery.</p></div>
+      <div class="timeline reveal">
+        <div class="role"><div class="role-date">JUNE 2020 — PRESENT*</div><div><h3>Software Developer</h3><div class="company">Inficore</div><p>Enterprise application development and implementation work, including API integrations, healthcare and pharmaceutical systems, receipting workflows and connections with platforms such as SYSPRO and LabWare.</p></div></div>
+        <div class="role"><div class="role-date">JANUARY 2017 — JUNE 2020</div><div><h3>Software Developer</h3><div class="company">Innova</div><p>Application development spanning Windows Forms and web-based solutions, REST APIs, Java-based banking and payment integrations, and SQL and NoSQL databases.</p></div></div>
+      </div>
+      <p class="meta" style="font-size:10px;color:var(--muted);margin:24px 0 0">*Current role dates and wording should be confirmed before final publication.</p>
+    </div></section>
+
+    <section id="capabilities"><div class="wrap">
+      <div class="section-head reveal"><div><div class="section-kicker">04 / TOOLKIT</div><h2>Tools for the<br><span class="gradient">whole stack.</span></h2></div><p class="section-intro">A practical engineering toolkit shaped by application delivery, integration work and product development.</p></div>
+      <div class="skill-grid">
+        <div class="skill reveal"><b>Backend engineering</b><span>C# · .NET · PHP · Python · Java · FastAPI · CodeIgniter</span></div>
+        <div class="skill reveal"><b>Frontend & mobile</b><span>Angular · JavaScript · HTML · CSS · Flutter · Android</span></div>
+        <div class="skill reveal"><b>Data & persistence</b><span>SQL Server · MySQL · PostgreSQL · SQLite · MongoDB</span></div>
+        <div class="skill reveal"><b>Integration</b><span>REST APIs · Payment workflows · USSD · Enterprise platforms</span></div>
+        <div class="skill reveal"><b>Cloud & delivery</b><span>Azure · AWS · Google Cloud · DigitalOcean · CI/CD</span></div>
+        <div class="skill reveal"><b>Engineering practice</b><span>Git · GitHub · Debugging · Testing · Maintainable architecture</span></div>
+        <div class="skill reveal"><b>Business domains</b><span>ERP · HR & payroll · Finance · Healthcare · Retail</span></div>
+        <div class="skill reveal"><b>Product development</b><span>Requirements · Workflow design · Prototyping · Deployment</span></div>
+      </div>
+    </div></section>
+
+    <section id="contact"><div class="wrap"><div class="cta reveal"><div><div class="section-kicker">05 / START A CONVERSATION</div><h2>Have a complex problem?<br><span class="gradient">Let's engineer a solution.</span></h2><p>Open to conversations around software engineering, enterprise integrations, product development and practical technology consulting.</p></div><a class="btn btn-primary" href="mailto:bicxtor1@gmail.com">Email Clinton ↗</a></div></div></section>
+  </main>
+  <footer class="wrap"><span>© <span id="year"></span> CLINTON INGALIA · BUILT WITH INTENT.</span><div class="footer-links"><a href="https://github.com/cingalia" target="_blank" rel="noreferrer">GITHUB ↗</a><a href="https://www.linkedin.com/in/clinton-ingalia-b39a6b7a/" target="_blank" rel="noreferrer">LINKEDIN ↗</a><a href="mailto:bicxtor1@gmail.com">EMAIL ↗</a></div></footer>
+  <script>
+    document.getElementById('year').textContent=new Date().getFullYear();
+    const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+  </script>
+</body>
+</html>
