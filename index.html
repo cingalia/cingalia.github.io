@@ -30,6 +30,36 @@
     .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{background:linear-gradient(145deg,rgba(18,30,48,.88),rgba(13,20,33,.92));border:1px solid var(--line);border-radius:16px;padding:28px}.panel p{color:var(--muted);font-size:14px;margin:0 0 14px}.panel p:last-child{margin-bottom:0}.principles{display:grid;gap:12px}.principle{display:flex;gap:14px;align-items:flex-start}.principle-icon{width:34px;height:34px;flex:0 0 34px;border:1px solid rgba(101,230,210,.22);border-radius:10px;display:grid;place-items:center;color:var(--cyan);font:12px "DM Mono"}.principle b{font-size:13px}.principle small{display:block;color:var(--muted);font-size:12px;margin-top:3px}
     .work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.work-card{padding:26px;border-radius:16px;border:1px solid var(--line);background:linear-gradient(145deg,rgba(18,30,48,.84),rgba(12,19,32,.92));position:relative;overflow:hidden;transition:.25s}.work-card:hover{transform:translateY(-5px);border-color:rgba(101,230,210,.42);box-shadow:0 22px 50px rgba(0,0,0,.2)}.work-card:after{content:"";position:absolute;width:180px;height:180px;right:-80px;top:-90px;border-radius:50%;background:rgba(101,230,210,.07);filter:blur(4px)}.work-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:25px}.work-icon{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;color:var(--cyan);border:1px solid rgba(101,230,210,.24);background:rgba(101,230,210,.07);font:14px "DM Mono"}.tag{font-size:9px;color:#9db0c8;border:1px solid var(--line);padding:6px 9px;border-radius:20px;text-transform:uppercase}.work-card h3{font-size:20px;letter-spacing:-.04em;margin:0 0 9px}.work-card p{font-size:13px;color:var(--muted);margin:0 0 18px;max-width:490px}.chips{display:flex;gap:7px;flex-wrap:wrap}.chips span{font:10px "DM Mono";color:#a9bad0;background:rgba(255,255,255,.04);padding:6px 8px;border-radius:6px}
     .timeline{border-left:1px solid rgba(101,230,210,.28);margin-left:9px;padding-left:28px;display:grid;gap:28px}.role{position:relative;display:grid;grid-template-columns:180px 1fr;gap:24px}.role:before{content:"";position:absolute;width:9px;height:9px;border-radius:50%;background:var(--cyan);left:-33px;top:8px;box-shadow:0 0 15px rgba(101,230,210,.5)}.role-date{font:11px "DM Mono";color:var(--cyan);padding-top:5px}.role h3{font-size:18px;margin:0 0 3px}.role .company{font-size:12px;color:var(--muted)}.role p{font-size:13px;color:var(--muted);max-width:680px;margin:10px 0 0}
+
+    .venture-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .venture-card{border:1px solid var(--line);border-radius:18px;padding:28px;background:linear-gradient(145deg,rgba(18,30,48,.94),rgba(12,19,32,.96));position:relative;overflow:hidden}
+    .venture-card.featured{border-color:rgba(166,140,255,.38);background:radial-gradient(ellipse at 100% 0%,rgba(166,140,255,.13),transparent 48%),linear-gradient(145deg,rgba(23,28,52,.96),rgba(12,19,32,.96))}
+    .venture-card.inficore{border-color:rgba(120,169,255,.34);background:radial-gradient(ellipse at 100% 0%,rgba(120,169,255,.12),transparent 48%),linear-gradient(145deg,rgba(17,31,52,.96),rgba(12,19,32,.96))}
+    .venture-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px}
+    .venture-mark{display:inline-flex;align-items:center;justify-content:center;min-width:54px;height:42px;padding:0 12px;border-radius:11px;font:800 14px "DM Mono";letter-spacing:-.04em;color:var(--cyan);border:1px solid rgba(101,230,210,.3);background:rgba(101,230,210,.08)}
+    .featured .venture-mark{color:#c6b5ff;border-color:rgba(166,140,255,.38);background:rgba(166,140,255,.10)}
+    .inficore .venture-mark{color:#a9c8ff;border-color:rgba(120,169,255,.38);background:rgba(120,169,255,.10)}
+    .venture-card h3{font-size:clamp(23px,3vw,30px);letter-spacing:-.055em;margin:0 0 4px}
+    .venture-role{font:10px "DM Mono";letter-spacing:.05em;text-transform:uppercase;color:var(--cyan);margin-bottom:14px}
+    .venture-card p{font-size:13px;color:var(--muted);margin:0 0 18px}
+    .product-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:22px}
+    .product-tile{min-height:126px;border:1px solid var(--line);border-radius:12px;padding:14px;background:rgba(255,255,255,.025);display:flex;flex-direction:column;justify-content:space-between;gap:12px}
+    .product-wordmark{font-weight:800;letter-spacing:-.045em;font-size:15px;line-height:1.2}
+    .product-wordmark small{display:block;font:9px "DM Mono";letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+    .product-tile p{font-size:11px;line-height:1.6;margin:0;color:var(--muted)}
+    .product-tile a{color:inherit}.product-tile a:hover .product-wordmark{color:var(--cyan)}
+    .venture-meta{font:10px "DM Mono";color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+    .project-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:20px}
+    .project-item{border:1px solid var(--line);border-radius:11px;padding:13px;background:rgba(255,255,255,.025)}
+    .project-item b{font-size:12px;display:block;margin-bottom:4px}.project-item span{font-size:11px;color:var(--muted);line-height:1.55;display:block}
+    .experience-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .experience-item{border:1px solid var(--line);border-radius:13px;padding:18px;background:linear-gradient(145deg,rgba(18,30,48,.78),rgba(12,19,32,.86))}
+    .experience-item h3{font-size:15px;margin:0 0 3px;letter-spacing:-.025em}
+    .experience-item .role-label{font:9px "DM Mono";text-transform:uppercase;letter-spacing:.05em;color:var(--cyan);margin-bottom:9px}
+    .experience-item p{font-size:12px;color:var(--muted);margin:0}
+    .capability-note{font-size:12px;color:var(--muted);margin-top:20px}
+    @media(max-width:850px){.venture-grid{grid-template-columns:1fr}.experience-list{grid-template-columns:1fr 1fr}}
+    @media(max-width:600px){.venture-card{padding:21px}.product-grid,.project-list,.experience-list{grid-template-columns:1fr}}
     .skill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.skill{padding:17px;border:1px solid var(--line);border-radius:12px;background:rgba(17,27,43,.68)}.skill b{display:block;font-size:13px;margin-bottom:6px}.skill span{font-size:11px;color:var(--muted);line-height:1.7}
     .cta{padding:48px;border:1px solid rgba(101,230,210,.24);border-radius:20px;background:radial-gradient(ellipse at 100% 0%,rgba(120,169,255,.14),transparent 50%),linear-gradient(120deg,rgba(17,39,50,.94),rgba(17,24,42,.94));display:flex;justify-content:space-between;align-items:center;gap:28px}.cta h2{font-size:clamp(27px,4vw,42px);letter-spacing:-.06em;line-height:1.12;margin:8px 0 10px}.cta p{color:var(--muted);font-size:13px;margin:0;max-width:540px}
     footer{padding:28px 0 40px;color:var(--muted);font:10px "DM Mono";display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-links{display:flex;gap:18px}footer a:hover{color:var(--cyan)}
@@ -76,6 +106,51 @@
       </div>
     </div></section>
 
+
+    <section id="experience"><div class="wrap">
+      <div class="section-head reveal"><div><div class="section-kicker">02 / VENTURES & EXPERIENCE</div><h2>Engineering.<br><span class="gradient">Building. Leading.</span></h2></div><p class="section-intro">My journey spans enterprise software engineering, technical leadership and founding technology ventures that turn practical problems into useful products.</p></div>
+      <div class="venture-grid">
+        <article class="venture-card featured reveal">
+          <div class="venture-top"><span class="tag">FOUNDER · TECHNOLOGY VENTURE</span><span class="venture-mark">AL.</span></div>
+          <h3>Aurora Labs</h3><div class="venture-role">Founder · Product Strategy & Software Engineering</div>
+          <p>A technology venture building software products and practical solutions across business management, community finance, workforce systems and agriculture.</p>
+          <div class="venture-meta">PRODUCT PORTFOLIO</div>
+          <div class="product-grid">
+            <div class="product-tile"><a href="https://chama.softsuiteerp.co.ke/" target="_blank" rel="noreferrer"><div class="product-wordmark"><small>SOFTSUITE</small>Chama</div></a><p>Chama and group management: members, savings, welfare, shares, loans, meetings and reports.</p></div>
+            <div class="product-tile"><a href="https://softsuiteerp.co.ke/" target="_blank" rel="noreferrer"><div class="product-wordmark"><small>SOFTSUITE</small>People</div></a><p>Human resources and payroll management for organisations.</p></div>
+            <div class="product-tile"><a href="https://softsuiteerp.co.ke/" target="_blank" rel="noreferrer"><div class="product-wordmark"><small>SOFTSUITE</small>Business</div></a><p>Business operations and inventory management, including sales and POS workflows.</p></div>
+            <div class="product-tile"><div class="product-wordmark"><small>AGRICULTURE</small>Jani AgriTech</div><p>An integrated farming venture exploring poultry, aquaculture, BSF, Azolla and crop production.</p></div>
+          </div>
+          <p class="capability-note"><strong>Founder responsibilities:</strong> product vision, architecture, full-stack development, technical direction, deployment and business development.</p>
+        </article>
+        <article class="venture-card inficore reveal">
+          <div class="venture-top"><span class="tag">FOUNDER · ENTERPRISE SOFTWARE</span><span class="venture-mark">IF.</span></div>
+          <h3>Inficore Limited</h3><div class="venture-role">Founder · Lead Developer</div>
+          <p>Enterprise software engineering, systems integration and technical delivery across business applications, APIs, databases and operational workflows.</p>
+          <div class="venture-meta">SELECTED CLIENT ENGAGEMENTS</div>
+          <div class="project-list">
+            <div class="project-item"><b>MEDS Kenya</b><span>QPAS Quality Assurance System and SYSPRO transaction integration.</span></div>
+            <div class="project-item"><b>Brookside</b><span>Rules-driven SYSPRO purchase order workflow automation.</span></div>
+            <div class="project-item"><b>Fresha</b><span>Return merchandise automation and milk collection data integration.</span></div>
+            <div class="project-item"><b>Mabati Rolling Mills</b><span>Employee and payroll data synchronisation between SYSPRO and NetSuite.</span></div>
+          </div>
+          <p class="capability-note"><strong>Technical leadership:</strong> architecture, full-stack development, integrations, deployments, production support and client technical discussions.</p>
+          <a class="venture-meta" href="https://inficore.co.ke/" target="_blank" rel="noreferrer">Inficore website ↗</a>
+        </article>
+      </div>
+      <div class="section-head reveal" style="margin-top:58px;margin-bottom:24px"><div><div class="section-kicker">OTHER PROFESSIONAL EXPERIENCE</div><h2 style="font-size:clamp(25px,3vw,34px)">A career across industries.</h2></div><p class="section-intro">Additional roles and project engagements across fintech, enterprise applications, payroll, education, healthcare and digital commerce.</p></div>
+      <div class="experience-list">
+        <article class="experience-item reveal"><h3>Innova Limited</h3><div class="role-label">Software Engineer</div><p>Full-stack fintech development using .NET and Azure, including investment management, online portals, accounting and banking integrations.</p></article>
+        <article class="experience-item reveal"><h3>TechnoBrain</h3><div class="role-label">Contract Software Developer / Software Design Engineer</div><p>Software maintenance, defect investigation, debugging and corrective development for international clients.</p></article>
+        <article class="experience-item reveal"><h3>EasyPay</h3><div class="role-label">Lead Developer</div><p>Led ongoing development of an existing payroll and HR product covering payroll, leave management and muster rolls.</p></article>
+        <article class="experience-item reveal"><h3>Africa Centre for Computing</h3><div class="role-label">Software Developer · Project Engagement</div><p>University management solutions for KCA University, Zetech University and Mount Kenya University across academic and administrative modules.</p></article>
+        <article class="experience-item reveal"><h3>Trots</h3><div class="role-label">Backend Developer</div><p>Backend and database development for a social commerce platform, including merchant payment integrations across banks and M-PESA.</p></article>
+        <article class="experience-item reveal"><h3>Smsgh USSD Framework</h3><div class="role-label">Software Developer · Project Engagement</div><p>Contributed to USSD framework development and application integrations.</p></article>
+        <article class="experience-item reveal"><h3>Modern Age Solutions</h3><div class="role-label">Contract Software Developer</div><p>Developed the Milgates School WordPress website and Kalimoni Greens inventory middleware integration.</p></article>
+        <article class="experience-item reveal"><h3>Banda Health (SIM Kenya)</h3><div class="role-label">Contract Software Developer</div><p>Defect investigation, troubleshooting and corrective development on an existing healthcare management system.</p></article>
+      </div>
+    </div></section>
+
     <section id="work"><div class="wrap">
       <div class="section-head reveal"><div><div class="section-kicker">02 / SELECTED WORK</div><h2>Systems with a<br><span class="gradient">job to do.</span></h2></div><p class="section-intro">A selection of engineering areas and products across my professional work. Some client implementations are intentionally described at a capability level.</p></div>
       <div class="work-grid">
@@ -86,15 +161,6 @@
         <article class="work-card reveal"><div class="work-top"><span class="work-icon">HR</span><span class="tag">Business applications</span></div><h3>HR, payroll & workforce tools</h3><p>Application development across payroll, leave management, employee records, muster rolls, salary validation and related business processes.</p><div class="chips"><span>.NET</span><span>SQL</span><span>Excel workflows</span><span>Testing</span></div></article>
         <article class="work-card reveal"><div class="work-top"><span class="work-icon">USSD</span><span class="tag">Mobile services</span></div><h3>USSD application frameworks</h3><p>Backend framework work for menu-driven mobile services, supporting structured interactions between users and application services.</p><div class="chips"><span>C#</span><span>.NET</span><span>USSD</span><span>APIs</span></div></article>
       </div>
-    </div></section>
-
-    <section id="experience"><div class="wrap">
-      <div class="section-head reveal"><div><div class="section-kicker">03 / EXPERIENCE</div><h2>Built through<br><span class="gradient">real-world work.</span></h2></div><p class="section-intro">Professional experience across software development, integrations and enterprise application delivery.</p></div>
-      <div class="timeline reveal">
-        <div class="role"><div class="role-date">JUNE 2020 — PRESENT*</div><div><h3>Software Developer</h3><div class="company">Inficore</div><p>Enterprise application development and implementation work, including API integrations, healthcare and pharmaceutical systems, receipting workflows and connections with platforms such as SYSPRO and LabWare.</p></div></div>
-        <div class="role"><div class="role-date">JANUARY 2017 — JUNE 2020</div><div><h3>Software Developer</h3><div class="company">Innova</div><p>Application development spanning Windows Forms and web-based solutions, REST APIs, Java-based banking and payment integrations, and SQL and NoSQL databases.</p></div></div>
-      </div>
-      <p class="meta" style="font-size:10px;color:var(--muted);margin:24px 0 0">*Current role dates and wording should be confirmed before final publication.</p>
     </div></section>
 
     <section id="capabilities"><div class="wrap">
