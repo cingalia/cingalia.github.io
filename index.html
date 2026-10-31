@@ -61,24 +61,23 @@
     @media(max-width:850px){.venture-grid{grid-template-columns:1fr}.experience-list{grid-template-columns:1fr 1fr}}
     @media(max-width:600px){.venture-card{padding:21px}.product-grid,.project-list,.experience-list{grid-template-columns:1fr}}
 
-    .showcase-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:stretch}
-    .showcase-column{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:linear-gradient(145deg,rgba(18,30,48,.94),rgba(12,19,32,.96))}
-    .showcase-heading{padding:25px 27px 22px;background:linear-gradient(120deg,rgba(101,230,210,.09),rgba(120,169,255,.07));border-bottom:1px solid var(--line)}
-    .showcase-heading.inficore-head{background:linear-gradient(120deg,rgba(120,169,255,.13),rgba(166,140,255,.07))}
-    .showcase-heading-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
-    .showcase-brand{font-size:25px;font-weight:800;letter-spacing:-.06em}
-    .showcase-brand a:hover{color:var(--cyan)}
-    .showcase-heading p{font-size:12px;color:var(--muted);margin:8px 0 0}
-    .showcase-body{padding:19px;display:grid;gap:12px}
-    .showcase-item{border:1px solid var(--line);border-radius:13px;padding:15px;background:rgba(255,255,255,.025)}
-    .showcase-item-head{display:flex;align-items:center;gap:12px;margin-bottom:10px}
-    .client-logo{width:58px;height:48px;flex:0 0 58px;border-radius:9px;display:grid;place-items:center;background:#f5f7fb;color:#16304a;font-weight:800;font-size:13px;letter-spacing:-.04em;text-align:center;padding:5px}
-    .client-logo.meds{color:#166345;font-size:14px}.client-logo.brookside{color:#0879ad;font-size:10px}.client-logo.fresha{color:#1c443d;font-size:12px;letter-spacing:-.06em}.client-logo.mrm{color:#194ea0;font-size:17px}
-    .client-logo.chama{background:linear-gradient(135deg,#143f34,#218c68);color:#d8ffec}.client-logo.people{background:linear-gradient(135deg,#163b67,#327fc0);color:#e5f3ff}.client-logo.business{background:linear-gradient(135deg,#29245f,#5c55bd);color:#f0edff}.client-logo.jani{background:linear-gradient(135deg,#254b2d,#72a94e);color:#f2ffe7}
-    .showcase-item h3{font-size:14px;margin:0 0 2px;letter-spacing:-.025em}.showcase-item .item-type{font:9px "DM Mono";text-transform:uppercase;letter-spacing:.05em;color:var(--cyan)}
-    .showcase-item ul{margin:9px 0 0;padding-left:17px;color:var(--muted);font-size:11px;line-height:1.7}.showcase-item p{font-size:11px;color:var(--muted);margin:8px 0 0}
-    .showcase-foot{padding:0 20px 20px;font-size:11px;color:var(--muted)}.showcase-foot a{color:var(--cyan)}
+
+    .showcase-body{padding:19px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-content:start}
+    .showcase-item{min-width:0;height:100%}
+    .logo-marquee{margin-top:30px;padding:22px 0 8px;border-top:1px solid var(--line);overflow:hidden;position:relative}
+    .logo-marquee-label{font:10px "DM Mono";letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 16px}
+    .logo-marquee-window{overflow:hidden;position:relative;mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+    .logo-marquee-track{display:flex;width:max-content;animation:logo-drift 42s linear infinite}
+    .logo-marquee-window:hover .logo-marquee-track{animation-play-state:paused}
+    .logo-marquee-set{display:flex;align-items:center;gap:13px;padding-right:13px}
+    .brand-mark{height:62px;min-width:142px;padding:0 18px;display:flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:12px;background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.018));color:#e8f0fa;font-size:13px;font-weight:750;letter-spacing:-.035em;white-space:nowrap;transition:border-color .2s,background .2s}
+    .brand-mark:nth-child(3n){font-weight:600;letter-spacing:.015em}
+    .brand-mark:nth-child(4n){font-size:11px;letter-spacing:.02em}
+    .brand-mark:hover{border-color:rgba(101,230,210,.45);background:rgba(101,230,210,.07)}
+    @keyframes logo-drift{from{transform:translateX(0)}to{transform:translateX(-50%)}}
     @media(max-width:850px){.showcase-grid{grid-template-columns:1fr}}
+    @media(max-width:560px){.showcase-body{grid-template-columns:1fr}.brand-mark{height:56px;min-width:125px}}
+    @media(prefers-reduced-motion:reduce){.logo-marquee-track{animation:none}}
 
     .skill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.skill{padding:17px;border:1px solid var(--line);border-radius:12px;background:rgba(17,27,43,.68)}.skill b{display:block;font-size:13px;margin-bottom:6px}.skill span{font-size:11px;color:var(--muted);line-height:1.7}
     .cta{padding:48px;border:1px solid rgba(101,230,210,.24);border-radius:20px;background:radial-gradient(ellipse at 100% 0%,rgba(120,169,255,.14),transparent 50%),linear-gradient(120deg,rgba(17,39,50,.94),rgba(17,24,42,.94));display:flex;justify-content:space-between;align-items:center;gap:28px}.cta h2{font-size:clamp(27px,4vw,42px);letter-spacing:-.06em;line-height:1.12;margin:8px 0 10px}.cta p{color:var(--muted);font-size:13px;margin:0;max-width:540px}
@@ -194,6 +193,19 @@
           </div>
           <div class="showcase-foot">Selected client engagements · <a href="https://inficore.co.ke/" target="_blank" rel="noreferrer">Visit Inficore ↗</a></div>
         </article>
+      </div>
+      <div class="logo-marquee reveal">
+        <p class="logo-marquee-label">Organisations & teams across my professional work</p>
+        <div class="logo-marquee-window">
+          <div class="logo-marquee-track">
+            <div class="logo-marquee-set">
+              <span class="brand-mark">MEDS</span><span class="brand-mark">Brookside</span><span class="brand-mark">Fresha</span><span class="brand-mark">Mabati Rolling Mills</span><span class="brand-mark">Innova</span><span class="brand-mark">TechnoBrain</span><span class="brand-mark">EasyPay</span><span class="brand-mark">Africa Centre for Computing</span><span class="brand-mark">Trots</span><span class="brand-mark">Smsgh</span><span class="brand-mark">Modern Age Solutions</span><span class="brand-mark">Kalimoni Greens</span><span class="brand-mark">Milgates School</span><span class="brand-mark">SoftSuite Chama</span><span class="brand-mark">Banda Health</span><span class="brand-mark">KCA University</span><span class="brand-mark">Zetech University</span><span class="brand-mark">Mount Kenya University</span><span class="brand-mark">I&M Bank</span><span class="brand-mark">Chase Bank</span><span class="brand-mark">Jubilee Insurance</span>
+            </div>
+            <div class="logo-marquee-set" aria-hidden="true">
+              <span class="brand-mark">MEDS</span><span class="brand-mark">Brookside</span><span class="brand-mark">Fresha</span><span class="brand-mark">Mabati Rolling Mills</span><span class="brand-mark">Innova</span><span class="brand-mark">TechnoBrain</span><span class="brand-mark">EasyPay</span><span class="brand-mark">Africa Centre for Computing</span><span class="brand-mark">Trots</span><span class="brand-mark">Smsgh</span><span class="brand-mark">Modern Age Solutions</span><span class="brand-mark">Kalimoni Greens</span><span class="brand-mark">Milgates School</span><span class="brand-mark">SoftSuite Chama</span><span class="brand-mark">Banda Health</span><span class="brand-mark">KCA University</span><span class="brand-mark">Zetech University</span><span class="brand-mark">Mount Kenya University</span><span class="brand-mark">I&M Bank</span><span class="brand-mark">Chase Bank</span><span class="brand-mark">Jubilee Insurance</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div></section>
 
