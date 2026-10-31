@@ -130,12 +130,29 @@
     @media(max-width:600px){.showcase-heading{padding:20px 18px 17px}.showcase-body{padding:13px;grid-template-columns:1fr;gap:10px}.showcase-item{padding:14px}.showcase-brand{font-size:20px}.marquee-mark{height:54px;min-width:128px;padding:0 14px}}
     @media(prefers-reduced-motion:reduce){.logo-marquee-track{animation:none}.showcase-item{transition:none}}
 
+  
+    /* Direct contact links in the header, contact section and footer */
+    .header-contact{display:flex;align-items:center;gap:7px;flex-shrink:0}
+    .header-contact a{font:9px "DM Mono";letter-spacing:.04em;color:var(--muted);padding:8px 9px;border:1px solid var(--line);border-radius:8px;transition:.2s}
+    .header-contact a:hover{color:var(--cyan);border-color:rgba(101,230,210,.42);background:rgba(101,230,210,.055)}
+    .header-contact .header-wa{color:#b8f5d0;border-color:rgba(37,211,102,.28);background:rgba(37,211,102,.06)}
+    .cta{align-items:center}
+    .contact-copy{flex:1;min-width:0}
+    .contact-actions{display:flex;flex-direction:column;gap:10px;min-width:205px}
+    .contact-actions .btn{justify-content:flex-start;white-space:nowrap}
+    .contact-symbol{width:25px;height:25px;display:inline-grid;place-items:center;border:1px solid currentColor;border-radius:7px;font:10px "DM Mono";opacity:.9}
+    .footer-links{align-items:center;flex-wrap:wrap}
+    @media(max-width:1000px){.header-contact{gap:5px}.header-contact a{padding:7px}.nav-links{gap:17px}}
+    @media(max-width:850px){.nav{gap:12px}.header-contact{margin-left:auto}.contact-actions{flex-direction:row;flex-wrap:wrap;min-width:0}.contact-actions .btn{flex:1 1 auto}}
+    @media(max-width:600px){.nav{gap:8px}.nav-links{gap:9px}.nav-links a{font-size:8px}.nav-links .contact-link{padding:7px 8px}.header-contact{gap:4px}.header-contact a{font-size:8px;padding:6px}.header-contact a:nth-child(2){display:none}.cta{padding:26px 20px}.contact-actions{display:grid;grid-template-columns:1fr}.contact-actions .btn{width:100%}.footer-links{gap:12px}}
+
   </style>
 </head>
 <body>
   <div class="nav-shell"><div class="wrap"><nav class="nav" aria-label="Main navigation">
     <a class="brand" href="#top"><span class="brand-mark">CI.</span><span>CLINTON INGALIA</span></a>
     <div class="nav-links"><a href="#about">ABOUT</a><a href="#work">WORK</a><a href="#experience">EXPERIENCE</a><a href="#contact" class="contact-link">LET'S TALK ↗</a></div>
+    <div class="header-contact" aria-label="Direct contact"><a class="header-wa" href="https://wa.me/254726870493" target="_blank" rel="noreferrer" aria-label="WhatsApp">WA</a><a href="mailto:bicxtor1@gmail.com" aria-label="Email">EMAIL</a><a href="tel:+254726870493" aria-label="Call 0726 870 493">CALL</a></div>
   </nav></div></div>
   <main id="top">
     <div class="wrap">
@@ -144,7 +161,7 @@
           <div class="eyebrow">SOFTWARE ENGINEER · PRODUCT BUILDER</div>
           <h1>Engineering<br><span class="gradient">ideas into</span><br>systems.</h1>
           <p class="hero-copy">I design, build and connect software that helps organisations work smarter. From enterprise applications and integrations to digital products built around real-world problems.</p>
-          <div class="hero-actions"><a class="btn btn-primary" href="#work">Explore my work <span>↘</span></a><a class="btn btn-quiet" href="https://www.linkedin.com/in/clinton-ingalia-b39a6b7a/" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a><a class="btn btn-whatsapp" href="https://wa.me/254106498144" target="_blank" rel="noreferrer" aria-label="Chat with me on WhatsApp">Chat on WhatsApp ↗</a></div>
+          <div class="hero-actions"><a class="btn btn-primary" href="#work">Explore my work <span>↘</span></a><a class="btn btn-quiet" href="https://www.linkedin.com/in/clinton-ingalia-b39a6b7a/" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a><a class="btn btn-whatsapp" href="https://wa.me/254726870493" target="_blank" rel="noreferrer" aria-label="Chat with me on WhatsApp">Chat on WhatsApp ↗</a></div>
           <div class="hero-meta"><span><i class="dot"></i> Kenya · Available for conversations</span><span>BUILD · INTEGRATE · IMPROVE</span></div>
         </div>
         <div class="visual" aria-label="Abstract engineering-inspired CI monogram">
@@ -267,9 +284,9 @@
       </div>
     </div></section>
 
-    <section id="contact"><div class="wrap"><div class="cta reveal"><div><div class="section-kicker">05 / START A CONVERSATION</div><h2>Have a complex problem?<br><span class="gradient">Let's engineer a solution.</span></h2><p>Open to conversations around software engineering, enterprise integrations, product development and practical technology consulting.</p></div><a class="btn btn-primary" href="mailto:bicxtor1@gmail.com">Email Clinton ↗</a></div></div></section>
+    <section id="contact"><div class="wrap"><div class="cta reveal"><div class="contact-copy"><div class="section-kicker">05 / START A CONVERSATION</div><h2>Have a complex problem?<br><span class="gradient">Let's engineer a solution.</span></h2><p>Open to conversations around software engineering, enterprise integrations, product development and practical technology consulting.</p></div><div class="contact-actions"><a class="btn btn-whatsapp" href="https://wa.me/254726870493" target="_blank" rel="noreferrer"><span class="contact-symbol">WA</span> WhatsApp <span>↗</span></a><a class="btn btn-quiet" href="mailto:bicxtor1@gmail.com"><span class="contact-symbol">@</span> Email <span>↗</span></a><a class="btn btn-quiet" href="tel:+254726870493"><span class="contact-symbol">☎</span> 0726 870 493</a></div></div></div></section>
   </main>
-  <footer class="wrap"><span>© <span id="year"></span> CLINTON INGALIA · BUILT WITH INTENT.</span><div class="footer-links"><a href="https://github.com/cingalia" target="_blank" rel="noreferrer">GITHUB ↗</a><a href="https://www.linkedin.com/in/clinton-ingalia-b39a6b7a/" target="_blank" rel="noreferrer">LINKEDIN ↗</a><a href="mailto:bicxtor1@gmail.com">EMAIL ↗</a></div></footer>
+  <footer class="wrap"><span>© <span id="year"></span> CLINTON INGALIA · BUILT WITH INTENT.</span><div class="footer-links"><a href="https://wa.me/254726870493" target="_blank" rel="noreferrer">WHATSAPP ↗</a><a href="tel:+254726870493">0726 870 493</a><a href="mailto:bicxtor1@gmail.com">EMAIL ↗</a><a href="https://github.com/cingalia" target="_blank" rel="noreferrer">GITHUB ↗</a><a href="https://www.linkedin.com/in/clinton-ingalia-b39a6b7a/" target="_blank" rel="noreferrer">LINKEDIN ↗</a></div></footer>
   <script>
     document.getElementById('year').textContent=new Date().getFullYear();
     const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});
